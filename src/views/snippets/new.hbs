@@ -1,0 +1,12 @@
+<h1>
+  <span class="far fa-plus-square"></span> Code:
+</h1>
+
+<form method="post" action="./create">
+  {{>validationSummary}}
+  <div class="form-group">
+    <input type="text" class="form-control" name="title" value="{{title}}" placeholder="Enter a title" required="required" autofocus="autofocus" />
+    <textarea name="value" value="{{value}}" placeholder="Enter code snippet" cols="104" rows="15"></textarea>
+  </div>
+  <button type="submit" class="btn btn-lg btn-primary">Submit</button>
+</form>

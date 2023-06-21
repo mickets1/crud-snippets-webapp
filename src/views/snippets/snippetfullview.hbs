@@ -1,0 +1,11 @@
+<h1>
+  <span class="far fa-edit"></span> Full View
+</h1>
+
+<form method="post" action="./{{viewData.id}}/update">
+<input type="hidden" name="id" value="{{viewData.id}}" />
+  <div class="form-group">
+    <input type="text" class="form-control" name="title" value="{{viewData.title}}" required="required" autofocus="autofocus" />
+    <textarea name="code" value="value" cols="104" rows="15">{{viewData.codeContent}}</textarea>
+  </div>
+</form>
